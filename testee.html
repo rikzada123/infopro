@@ -1,95 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoPro</title>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cabeçalho Interativo</title>
-      <style>
-          body {
-              margin: 0;
-              font-family: Arial, sans-serif;
-              background-color: #f0f0f0;
-          }
-  
-          .header {
-              display: flex;
-              align-items: center;
-              background-color: aqua;
-              color: black;
-              padding: 20px;
-              transition: background-color 0.3s ease;
-          }
-  
-          .header img {
-              width: 100px;
-              height: auto;
-              margin-right: 20px;
-          }
-  
-          .header h1 {
-              margin: 0;
-              font-size: 24px;
-          }
-  
-          .nav {
-              margin-left: auto;
-          }
-  
-          .nav a {
-              color: white;
-              margin: 0 15px;
-              text-decoration: none;
-              transition: color 0.3s ease; 
-          }
-  
-          .nav a:hover {
-              color: #ffcc00; 
-          }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFOPRO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 15px;
+      position: relative;
+      text-align: center;
+      padding-left: 130px;
+    }
+
+    header h1 {
+      font-size: 3rem; 
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    header img {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      width: 140px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-
-  <div class="header">
-      <img src="./infopro logo (2).png" alt="logo">
-      <div>
-          <h1>InfoPro</h1>
-          <p>Proteção e Informação</p>
-      </div>
+   
+  <header>
+    <div class="header">
+      <img src="./logo.png" alt="">
   </div>
-  </head>
-    <section id="logo">
-      <div class="logo">
-        <h2>Apresentação da InfoProTech</h2>
-        <img src="./infopro logo (2).png" width="250" height="250">
-        <h3>Significado do Nome "InfoPro"</h3>
-        <p>O nome Infopro é composto pela união de dois elementos que representam os pilares fundamentais da empresa:</p>
-        <ul>
-          <li>"Info", referente à Informação;</li>
-          <li>"Pro", referente a Proteção;</li>
-        </ul>
-        <p>Dessa forma, Infopro simboliza o compromisso com a proteção da informação, refletindo a missão da empresa de atuar com excelência na área de segurança da informação.        </p>
-      </div>
-    </section>
-    <section> 
-      <h2>Membros da Empresa</h2>
+    <h1>INFOPRO</h1>
+    <h3>Segurança da Informação</h3>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Equipe</h2>
       <ul>
-        <li>Henrique Ribeiro</li>
-        <li>Breno Moreira</li>
-        <li>Talis Gabriel</li>
+        <li><strong>Henrique Guimarães</strong> – Scrum Master, Responsável pelo site</li>
+        <li><strong>Breno Aquino</strong> – Relatório do projeto Latex</li>
+        <li><strong>Talis Gabriel</strong> – Pesquisa Qualitativa</li>
       </ul>
-    </section>
-    <section id="Sprint">
-      <h2>Informações da Sprint 01</h2>
+    </div>
+
+    <div class="card">
       <ul>
-       <li> Atividade 01: Criação da Empresa
-        <li>Atividade 02: Quadro Trello</li>
-        <li>Atividade 03: Pesquisa sobre Segurança da Informação</li>
-      </ul>
-  </body>
+      <h2>Resumo da Sprint 02</h2>
+      <li><strong>Criação da Empresa: </strong>A equipe definiu o nome da empresa, criou o logo, distribuiu os papéis entre os membros e organizou as primeiras atividades.</li>
+      <li><strong>Site: </strong>Criação da Primeira versão do Site.</li>
+      <li><strong>Banco de Questões: </strong>Elaboramos um Banco de Questões com 10 perguntas sobre Segurança da Informação.</li>
+      <li><strong>Repositorio: </strong> Criamos um Repositorio do GitHub no progeto do Site.</li>
+      <ul>
+    </div>
+
+    <div class="card">
+    <h2>Introdução</h2>
+    <p>
+      Segurança da Informação é o conjunto de práticas, políticas e tecnologias implementadas para proteger dados e sistemas contra acessos não autorizados, uso indevido, modificação ou destruição.</p><p>
+      Ela é fundamental para garantir a confidencialidade, integridade e disponibilidade das informações, essenciais para o funcionamento seguro de organizações e indivíduos.</p>
+  
+    <h2>Princípios Básicos da Segurança da Informação</h2>
+    <ul>
+      <li><strong>Confidencialidade:</strong> Proteger informações contra acessos não autorizados.</li>
+      <li><strong>Integridade:</strong> Garantir que os dados não sejam alterados indevidamente.</li>
+      <li><strong>Disponibilidade:</strong> Assegurar que as informações estejam acessíveis quando necessário.</li>
+      <li><strong>Autenticidade:</strong> Confirmar a identidade das partes envolvidas.</li>
+      <li><strong>Não-repúdio:</strong> Garantir que uma ação ou comunicação não possa ser contestada posteriormente.</li>
+    </ul>
+  
+    <h2>Principais Ameaças à Segurança</h2>
+    <ul>
+      <li><strong>Malware:</strong> Softwares maliciosos como vírus, worms, trojans e ransomwares.</li>
+      <li><strong>Phishing:</strong> Tentativas fraudulentas de obter informações sensíveis via mensagens enganosas.</li>
+      <li><strong>Ataques de engenharia social:</strong> Manipulação psicológica para obter dados confidenciais.</li>
+      <li><strong>Vazamento de dados:</strong> Perda ou divulgação não autorizada de informações.</li>
+      <li><strong>Ataques DDoS:</strong> Paralisação de serviços por meio de sobrecarga de requisições.</li>
+    </ul>
+  
+    <h2>Melhores Práticas para Proteger Informações</h2>
+    <ul>
+      <li data-tooltip="Use senhas fortes com combinação de letras, números e símbolos.">Utilize senhas fortes e únicas para cada serviço.</li>
+      <li data-tooltip="Mantenha seu sistema e aplicativos sempre atualizados para evitar vulnerabilidades.">Atualize regularmente sistemas e softwares.</li>
+      <li data-tooltip="Tenha backups frequentes armazenados em locais seguros, offline, se possível.">Faça backups periódicos e seguros dos dados.</li>
+      <li data-tooltip="Evite clicar em links suspeitos e confirmem autenticidade antes de informar dados.">Desconfie de mensagens e links desconhecidos.</li>
+      <li data-tooltip="Use autenticação em múltiplos fatores para aumentar a segurança do acesso.">Implemente autenticação multifatorial (MFA).</li>
+      <li data-tooltip="Evite compartilhar informações sensíveis em redes públicas sem proteção adequada.">Utilize redes seguras para acesso a dados sensíveis.</li>
+      <li data-tooltip="Eduque usuários e funcionários para reconhecer ameaças comuns.">Promova treinamentos e conscientização em segurança.</li>
+    </ul>
+  
+    <h2>Conclusão</h2>
+    <p>
+      A segurança da informação é vital para proteger dados pessoais, corporativos e governamentais contra ameaças contínuas e crescentes da era digital.
+    </p>
+    <p>
+      Adotar práticas sólidas e manter-se informado são as melhores defesas para minimizar riscos e garantir a confiança na informação.
+    </p>
+    </div>
+
+    <div class="card">
+      </body>
   <head>
         <title>Banco de questoes</title>
     </head>
@@ -296,4 +339,12 @@
             }
           </script>
     </body>
-  </html>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 INFOPRO</p>
+  </footer>
+
+</body>
+</html>
