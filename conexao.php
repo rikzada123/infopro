@@ -1,27 +1,17 @@
 <?php
-$servidor = "localhost";
+$host = "localhost";
 $usuario = "root";
 $senha = "";
 $banco = "infopro";
 
-$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
+// Conexão usando mysqli
+$conn = new mysqli($host, $usuario, $senha, $banco);
 
-if(!$conexao) {
-    die("Falha na conexão: " . mysqli_connect_error());
-}
-?>
-
-<?php
-$servername = "localhost";
-$username = "root";
-$password = ""; // Deixe vazio no XAMPP, a menos que você tenha colocado senha
-$dbname = "infopro"; // Troque para o nome REAL do seu banco de dados
-
-// Criar a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexão
+// Verifica a conexão
 if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
+    die("Falha na conexão: " . $conn->connect_error);
 }
+
+// Opcional: define charset como utf8
+$conn->set_charset("utf8");
 ?>
