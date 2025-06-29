@@ -13,7 +13,7 @@ if (!isset($_SESSION['usuario'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INFOPRO</title>
   <link rel="icon" type="image/x-icon" href="./imagens/logo.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.0">
   
 </head>
 <body>
@@ -21,12 +21,12 @@ if (!isset($_SESSION['usuario'])) {
   <div id="background"></div>
 
   <header>
-    <div class="header">
-      <img src="./logo.png" alt="">
+  <div class="container">
+    <img src="./logo.png" alt="Logo INFOPRO" class="logo">
+    <div class="titulo">
       <h1>INFOPRO</h1>
       <h3>Segurança da Informação</h3>
     </div>
-
     <nav class="menu">
       <ul>
         <li><a href="#inicio">Matéria</a></li>
@@ -34,7 +34,8 @@ if (!isset($_SESSION['usuario'])) {
         <li><a href="logout.php">Sair</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
   <section>
     <section id="inicio">
@@ -203,4 +204,5 @@ if (!isset($_SESSION['usuario'])) {
     <p>&copy; 2025 INFOPRO</p>
   </footer>
 <script src="quiz.js" defer></script>
-
+</body>
+</html>

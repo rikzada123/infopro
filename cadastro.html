@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro - INFOPRO</title>
+    <link rel="stylesheet" href="style.css?v=1">
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Cadastro</h2>
+
+      <div id="mensagem"></div>
+
+      <form action="cadastro.php" method="POST">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+      <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Digite seu E-mail" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <a href="login.html">Já tem uma conta? Faça login</a>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get('status');
+      const mensagem = document.getElementById('mensagem');
+
+      if (status === 'existe') {
+        mensagem.innerHTML = "<p class='erro'>❌ Usuário já existe.</p>";
+      } else if (status === 'sucesso') {
+        mensagem.innerHTML = "<p class='sucesso'>✅ Cadastro realizado com sucesso! <a href='login.html'>Clique aqui para fazer login</a></p>";
+      } else if (status === 'erro') {
+        mensagem.innerHTML = "<p class='erro'>❌ Erro ao cadastrar. Tente novamente.</p>";
+      }
+    </script>
+  </body>
+  </html>

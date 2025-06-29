@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: meu-site-php
+    env: docker
+    plan: free
+    repo: https://github.com/rikzada123/infopro
+    branch: main
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
