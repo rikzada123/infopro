@@ -3,11 +3,10 @@ session_start();
 include('conexao.php');
 
 if (isset($_POST['usuario']) && isset($_POST['senha'])) {
-    // Limpa os dados de entrada
+    
     $usuario = mysqli_real_escape_string($conexao, $_POST['usuario']);
-    $senha = $_POST['senha']; // Não precisa escapar a senha, vai usar bind_param
+    $senha = $_POST['senha']; 
 
-    // Use prepared statement para evitar SQL Injection
     $sql = "SELECT * FROM usuarios WHERE usuario = ?";
     $stmt = mysqli_prepare($conexao, $sql);
     mysqli_stmt_bind_param($stmt, "s", $usuario);
@@ -19,7 +18,7 @@ if (isset($_POST['usuario']) && isset($_POST['senha'])) {
 
         if (password_verify($senha, $row['senha'])) {
             $_SESSION['usuario'] = $row['usuario']; 
-            header('Location: site.php');
+            header('Location: index.php');
             exit();
         } else {
             echo "<script>alert('Senha incorreta!'); window.location.href='login.html';</script>";
