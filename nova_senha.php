@@ -15,7 +15,7 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("si", $novaSenha, $id);
 
 if ($stmt->execute()) {
-    // Limpa dados da recuperação
+  
     unset($_SESSION['recupera_id'], $_SESSION['recupera_nome']);
     echo "<script>
             alert('Senha alterada com sucesso!');

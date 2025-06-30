@@ -14,7 +14,6 @@ if (!isset($_SESSION['usuario'])) {
   <title>INFOPRO</title>
   <link rel="icon" type="image/x-icon" href="./imagens/logo.ico">
   <link rel="stylesheet" href="style.css?v=1.0">
-  
 </head>
 <body>
 

@@ -1,17 +1,25 @@
 <?php
-$host = "localhost";
+$servidor = "localhost";
 $usuario = "root";
 $senha = "";
 $banco = "infopro";
 
-// Conexão usando mysqli
-$conn = new mysqli($host, $usuario, $senha, $banco);
+$conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+if(!$conexao) {
+    die("Falha na conexão: " . mysqli_connect_error());
 }
+?>
 
-// Opcional: define charset como utf8
-$conn->set_charset("utf8");
+<?php
+$servername = "localhost";
+$username = "root";
+$password = ""; 
+$dbname = "infopro"; 
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 ?>
